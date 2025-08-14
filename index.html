@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Online CV of Tran Nhat Tan — Software Developer based in Thu Duc, Ho Chi Minh City, Vietnam." />
+    <meta name="keywords" content="Tran Nhat Tan, CV, Resume, Software Developer, JavaScript, TypeScript, C#, React, ASP.NET Core, NodeJS" />
+    <meta name="author" content="Tran Nhat Tan" />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#2c3e50" />
+
+    <title>Tran Nhat Tan — Online CV</title>
+
+    <!-- Preconnects for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts: Poppins (headings) + Inter (body) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Early theme init to avoid flash -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('cv-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var theme = saved || 'dark'; // Default to dark mode
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (_) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Manifest for PWA -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Open Graph (basic SEO) -->
+    <meta property="og:title" content="Tran Nhat Tan — Online CV" />
+    <meta property="og:description" content="Software Developer — projects, skills, education, and certificates." />
+    <meta property="og:type" content="website" />
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tran Nhat Tan — Online CV" />
+    <meta name="twitter:description" content="Software Developer — projects, skills, education, and certificates." />
+  </head>
+  <body>
+    <a class="skip-link" href="#objective">Skip to content</a>
+
+    <!-- Header / Navigation -->
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Home">
+          <img src="./avatar.jpg" alt="Tran Nhat Tan" class="brand__avatar" loading="eager" />
+          <div class="brand__info">
+            <span class="brand__name">Tran Nhat Tan</span>
+            <span class="brand__role">Software Developer</span>
+          </div>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#objective">Objective</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+                  <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Switch to Light mode">
+              <span class="icon-text">☀</span>
+            </button>
+            <button id="printBtn" class="icon-btn" aria-label="Print or Save as PDF" title="Download CV (Print)">
+              <span class="icon-text">⎙</span>
+            </button>
+          </div>
+      </nav>
+
+      
+    </header>
+
+    <main>
+      <!-- Profile Hero -->
+      <section class="profile-hero">
+        <div class="container">
+          <div class="profile-card">
+            <div class="profile-avatar">
+              <img src="./avatar.jpg" alt="Tran Nhat Tan" class="avatar-large" loading="eager" />
+            </div>
+            <div class="profile-info">
+              <h1 class="profile-name">Tran Nhat Tan</h1>
+              <p class="profile-title">Software Developer</p>
+              <p class="profile-location">📍 Thu Duc, Ho Chi Minh City, Vietnam</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objective -->
+      <section id="objective" class="section">
+        <div class="container">
+          <h2 class="section__title reveal">Objective</h2>
+          <p class="lead">
+            I aim to bring value to the company by quickly adapting to its technology stack. If given the opportunity to become a full-time employee, I am committed to growing with the company and contributing to its long-term success.
+          </p>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section section--alt">
+        <div class="container">
+          <h2 class="section__title reveal">Education</h2>
+          <article class="edu-card">
+            <div class="edu-card__header">
+              <h3 class="edu-card__title">University of Science - Vietnam National University</h3>
+              <span class="edu-card__period">2022 – 2026</span>
+            </div>
+            <p class="edu-card__meta">Bachelor of Information Technology • GPA: 3.46</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section__title reveal">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+              <ul class="tag-list">
+                <li class="tag">C#</li>
+                <li class="tag">JavaScript</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">Python</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-display"></i> Frontend</h3>
+              <ul class="tag-list">
+                <li class="tag">React</li>
+                <li class="tag">Angular</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-server"></i> Backend</h3>
+              <ul class="tag-list">
+                <li class="tag">ASP.NET Core</li>
+                <li class="tag">NodeJS</li>
+                <li class="tag">Express.JS</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-mobile-screen-button"></i> Mobile</h3>
+              <ul class="tag-list">
+                <li class="tag">React Native</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-database"></i> Databases</h3>
+              <ul class="tag-list">
+                <li class="tag">MS SQL Server</li>
+                <li class="tag">Oracle</li>
+                <li class="tag">PostgreSQL</li>
+                <li class="tag">MongoDB</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-vial"></i> Testing</h3>
+              <ul class="tag-list">
+                <li class="tag">xUnit.net</li>
+                <li class="tag">Jest</li>
+                <li class="tag">Mocha</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-diagram-project"></i> APIs</h3>
+              <ul class="tag-list">
+                <li class="tag">RESTful APIs</li>
+                <li class="tag">GraphQL</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group__title"><i class="fa-solid fa-toolbox"></i> Other</h3>
+              <ul class="tag-list">
+                <li class="tag">Git</li>
+                <li class="tag">Docker</li>
+                <li class="tag">Figma</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section--alt">
+        <div class="container">
+          <h2 class="section__title reveal">Projects</h2>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card reveal">
+              <header class="project-card__header">
+                <h3 class="project-card__title">Student Management System</h3>
+                <span class="project-card__meta">2025 • Team of 3</span>
+              </header>
+              <ul class="project-card__desc">
+                <li>React for visualization and management.</li>
+                <li>Backend: ASP.NET Core, Entity Framework, MSSQL.</li>
+                <li>Unit tests: xUnit + Moq.</li>
+              </ul>
+              <div class="project-card__stack">
+                <span class="tag">React</span>
+                <span class="tag">ASP.NET Core</span>
+                <span class="tag">Entity Framework</span>
+                <span class="tag">MSSQL</span>
+                <span class="tag">xUnit</span>
+                <span class="tag">Moq</span>
+              </div>
+              <div class="project-card__links">
+                <a class="btn btn--ghost" href="https://github.com/nhattanlht/Group23-Ex-Sat.git" target="_blank" rel="noopener" aria-label="GitHub repository for Student Management System">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card reveal">
+              <header class="project-card__header">
+                <h3 class="project-card__title">Learning Management System</h3>
+                <span class="project-card__meta">2024 • Team of 5</span>
+              </header>
+              <ul class="project-card__desc">
+                <li>MERN stack, JWT auth, role-based access, Cloudinary, Multer.</li>
+                <li>Context API, React Router, Render, Vercel.</li>
+              </ul>
+              <div class="project-card__stack">
+                <span class="tag">MongoDB</span>
+                <span class="tag">Express</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">JWT</span>
+                <span class="tag">Cloudinary</span>
+                <span class="tag">Multer</span>
+              </div>
+              <div class="project-card__links">
+                <a class="btn btn--ghost" href="https://github.com/nhattanlht/lms-nodejs.git" target="_blank" rel="noopener" aria-label="GitHub repository for Learning Management System">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a class="btn btn--primary" href="https://lms-frontend-eight-theta.vercel.app/" target="_blank" rel="noopener" aria-label="Live demo for Learning Management System">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card reveal">
+              <header class="project-card__header">
+                <h3 class="project-card__title">Restaurant Management System</h3>
+                <span class="project-card__meta">2023 • Team of 5</span>
+              </header>
+              <ul class="project-card__desc">
+                <li>React admin dashboard, MSSQL, stored procedures, triggers.</li>
+              </ul>
+              <div class="project-card__stack">
+                <span class="tag">React</span>
+                <span class="tag">MSSQL</span>
+                <span class="tag">Stored Procedures</span>
+                <span class="tag">Triggers</span>
+              </div>
+              <div class="project-card__links">
+                <a class="btn btn--ghost" href="https://github.com/nhattanlht/restaurant-system.git" target="_blank" rel="noopener" aria-label="GitHub repository for Restaurant Management System">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+          <h3 class="subsection__title">Latest from GitHub</h3>
+          <div id="latestRepos" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certificates" class="section">
+        <div class="container">
+          <h2 class="section__title reveal">Certificates</h2>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <div>
+                <h3 class="cert-item__title">Software Engineering — IBM</h3>
+                <p class="cert-item__meta">Coursera • 2024</p>
+              </div>
+              <a class="cert-item__link" href="https://coursera.org/share/8b5f299573ee2ad83d47b628e95a158f" target="_blank" rel="noopener" aria-label="View certificate Software Engineering — IBM">
+                View
+              </a>
+            </li>
+            <li class="cert-item">
+              <div>
+                <h3 class="cert-item__title">Version Control — Meta</h3>
+                <p class="cert-item__meta">Coursera • 2024</p>
+              </div>
+              <a class="cert-item__link" href="https://coursera.org/share/8134f2a36eb278fc5adccb6ac36862e8" target="_blank" rel="noopener" aria-label="View certificate Version Control — Meta">
+                View
+              </a>
+            </li>
+            <li class="cert-item">
+              <div>
+                <h3 class="cert-item__title">Vietnamese Standardized Test of English Proficiency — B1</h3>
+                <p class="cert-item__meta">2024</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--alt">
+        <div class="container">
+          <h2 class="section__title reveal">Contact</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>Thu Duc, Ho Chi Minh City, Vietnam</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:nhattanlht@gmail.com" title="Email">nhattanlht@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+84703347743" title="Phone">+84 703347743</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <a href="http://linkedin.com/in/tran-nhat-tan" target="_blank" rel="noopener" title="LinkedIn">linkedin.com/in/tran-nhat-tan</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/nhattanlht" target="_blank" rel="noopener" title="GitHub">github.com/nhattanlht</a>
+            </li>
+          </ul>
+
+          <!-- Contact form (Set action to your Formspree endpoint) -->
+          <form id="contactForm" class="contact-form" method="POST" action="" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Hello..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary"><i class="fa-regular fa-paper-plane"></i> Send</button>
+              <span class="form-hint">or email me at <a href="mailto:nhattanlht@gmail.com">nhattanlht@gmail.com</a></span>
+            </div>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Map embed -->
+          <div class="map-embed">
+            <iframe
+              id="mapFrame"
+              title="Location: Thu Duc, Ho Chi Minh City"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Thu%20Duc%20Ho%20Chi%20Minh%20City&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Tran Nhat Tan. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="http://linkedin.com/in/tran-nhat-tan" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/nhattanlht" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:nhattanlht@gmail.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+  </body>
+  
+</html>
+
