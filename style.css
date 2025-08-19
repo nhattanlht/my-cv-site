@@ -70,6 +70,13 @@ img {
   display: block;
 }
 
+/* Làm tròn tất cả ảnh avatar */
+img[src*="avatar"], 
+img[src*="logo"] {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 a {
   color: var(--color-accent);
   text-decoration: none;
